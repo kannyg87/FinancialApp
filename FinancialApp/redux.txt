@@ -1,0 +1,3 @@
+window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+npm install react-router-dom redux react-redux bootstrap react-bootstrap styled-components
