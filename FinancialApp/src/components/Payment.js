@@ -2,7 +2,7 @@ import React from 'react'
 import {useSelector} from 'react-redux';
 import AddPayment from './AddPaymnet'
 import DeletePayment from './DeletePayment'
-import { Paper, Body,} from './Styles';
+import { Paper, Body} from './Styles';
 import {Link} from 'react-router-dom';
 
 

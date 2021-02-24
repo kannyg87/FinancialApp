@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Body, Container} from './Styles';
 
 class API extends Component {
     constructor(){
@@ -22,37 +23,35 @@ class API extends Component {
     } //end of componentDidMount
 
     render() {
-        const {items}= this.state
-        let item = items.map((obj)=>{
-            return <li key={obj.lable}>
-                
-                Name: {obj.name} <br />
 
-                Utility: {obj.utility}
-                <br />
 
-                Sector: {obj.sector}
-                <br />
-                <a href={obj.uri} target="_blank">More Information</a>
-            </li>
-
+const {items}= this.state
+    let item = items.map((obj)=>{
+        return       <div className=" row mt-5">
+                        <div className=" mx-2 my-2 col-4">
+                            <div className="card" style={{width: "18rem"}} key={obj.lable}>
+                                <div className="card-body">
+                                    <h5 className="card-title">Name: {obj.name}</h5>
+                                    <h6 className="card-subtitle mb-2 text-muted"> Utility: {obj.utility}</h6>
+                                    <p className="card-text">Sector: {obj.sector}</p>
+                                    <a href={obj.uri} target="_blank">More Information...</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            
+           
         })
-
-        // const {items}= this.state
-        // let item = items.map((obj)=>{
-        //     return <div className="card" style="width: 18rem;" key={obj.lable}>
-        //                 <div className="card-body">
-        //                 <h5 className="card-title">Name: {obj.name}</h5>
-        //                 <h6 className="card-subtitle mb-2 text-muted"> Utility: {obj.utility}</h6>
-        //                 <p className="card-text">Sector: {obj.sector}</p>
-        //                 <a href={obj.uri} target="_blank">More Information</a>
-
-        //                 </div>
-        //             </div>
-        // })
         return (
         <>
-            {item}
+        
+        <Body>
+        <Container>
+        {item}
+        
+        </Container>
+        </Body>
+            
         </>
         )
     }

@@ -31,3 +31,13 @@ background-color:#FBFBF1 ;
   width: 1000px;
   margin: 0 auto;
 `;
+export const Container = styled.div`
+margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+`;
