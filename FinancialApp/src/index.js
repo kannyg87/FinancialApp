@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import reducer from './reducers/reducers';
+import API from './components/Api'
 import {
   BrowserRouter as Router,
   Route, Switch
@@ -55,7 +56,8 @@ ReactDOM.render(
             <Switch>
               <Route exact path='/' component={App}/>
               <Route path='/Payment' component={Payment}/>
-              <Route path='/mychart' component={MyChart}/>
+              <Route path='/API' component={API}/>
+              {/* <Route path='/mychart' component={MyChart}/> */}
             </Switch>
           </BaseLayout>
         </Router>

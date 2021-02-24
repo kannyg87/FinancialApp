@@ -2,7 +2,9 @@ import React from 'react'
 import {useSelector} from 'react-redux';
 import AddPayment from './AddPaymnet'
 import DeletePayment from './DeletePayment'
-import { Paper, Body } from './Styles';
+import { Paper, Body,} from './Styles';
+import {Link} from 'react-router-dom';
+
 
 
 
@@ -42,8 +44,19 @@ console.log(bills)
     
   </tbody>
 </table>
-<Paper> total Amount: ${totalCost}</Paper>
-
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="offset-1 col-5">
+            <Paper><h4>Total Amount: ${totalCost}</h4> </Paper>
+            </div>
+        < div class=" col-5">
+            {/* <button className="w-100 h-100 btn btn-warning"><Link to="/API">Click Me</Link></button> */}
+            <Link className="badge badge-warning w-100 h-90
+             text-center  " to="/API"><h3>Web Services</h3></Link>
+            
+            </div>
+    </div>
+</div>
 </div>
 </Body>
     </>

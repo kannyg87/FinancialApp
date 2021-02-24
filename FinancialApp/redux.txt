@@ -1,3 +1,8 @@
 window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 npm install react-router-dom redux react-redux bootstrap react-bootstrap styled-components
+
+https://developer.nrel.gov/api/alt-fuel-stations/v1.json?fuel_type=E85,ELEC&state=CA&limit=2&api_key=DdB1XR3gBFoCXcRcJ4yeoEGwsRBm3biLRmdPtLJT
+
+DdB1XR3gBFoCXcRcJ4yeoEGwsRBm3biLRmdPtLJT
+

@@ -20,7 +20,7 @@ export const Paper = styled.div`
     background-color:#f5f5dc;
     border-radius: 5px; /* 5px rounded corners */
     width:300px;
-    height: ${props => props.height || "100px"};
+    height: ${props => props.height || "90px"};
     margin-left:auto;
     margin-right: auto;
     padding: 10px;
