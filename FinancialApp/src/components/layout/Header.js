@@ -19,7 +19,7 @@ const Header = () => {
                 <Link className="nav-Link text-light" to="/Payment">Payment</Link>&nbsp;&nbsp; &nbsp;&nbsp;
             </li>
             <li className="nav-item">
-                <Link className="nav-Link text-light" to="/mychart">My-Chart</Link>&nbsp;&nbsp; &nbsp;&nbsp;
+                <Link className="nav-Link text-light" to="/Mychart">My-Chart</Link>&nbsp;&nbsp; &nbsp;&nbsp;
             </li>
         </ul>
     </div>

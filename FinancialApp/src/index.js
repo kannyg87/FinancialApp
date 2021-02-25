@@ -57,7 +57,7 @@ ReactDOM.render(
               <Route exact path='/' component={App}/>
               <Route path='/Payment' component={Payment}/>
               <Route path='/API' component={API}/>
-              {/* <Route path='/mychart' component={MyChart}/> */}
+              <Route path='/mychart' component={MyChart}/> 
             </Switch>
           </BaseLayout>
         </Router>

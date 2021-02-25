@@ -6,9 +6,11 @@ import {addPayment} from '../actions/templeteAction'
 import Financial from '../assets/imgs/financial.jpg';
 
 
+
 const AddPaymnet = () => {
     const [id,setId]=useState(1);
     const dispatch =useDispatch();
+    
 
     const handleEvent =(e) =>{
         e.preventDefault();
@@ -21,12 +23,14 @@ const AddPaymnet = () => {
             newId: id,
             billName: e.target.name.value,
             cost: e.target.cost.value,
-            notes: e.target.notes.value
+            notes: e.target.notes.value,
+            time:e.target.time.value
         }
         dispatch(addPayment(payments));
         e.target.name.value = "";
         e.target.cost.value = "";
         e.target.notes.value= "";
+        e.target.time.value= "";
 
     }
 
@@ -50,6 +54,19 @@ const AddPaymnet = () => {
                     <label for="exampleFormControlTextarea1">Notes</label>
                     <textarea class="form-control" id="notes" rows="3"></textarea>
                 </div>
+                
+
+                <div class="form-group">
+                    <label for="example-datetime-local-input"  >Date and time</label>
+                    <input className="form-control" type="datetime-local"  id="time" /> 
+                    {/* <DatePicker
+                        onChange={onChange}
+                        value={value}
+                                        /> */}
+
+                    </div>
+
+
                 <button type="submit" class="btn btn-warning mb-5">Submit</button>
                 </form>
         </div> 

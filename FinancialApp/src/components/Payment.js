@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom';
 
 
 
+
 const Payment = () => {
   const bills = useSelector(state => state.payments);
   const totalCost = useSelector(state => state.totalCost);
@@ -25,6 +26,7 @@ console.log(bills)
       <th scope="col">Paymnet</th>
       <th scope="col">Cost</th>
       <th scope="col">Notes</th>
+      <th scope="col">Date</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
@@ -37,6 +39,7 @@ console.log(bills)
               <td >{p.billName}</td>
               <td>{p.cost}</td>
               <td>{p.notes}</td>
+              <td>{p.time} </td>
               <td><DeletePayment payment={p}/></td>
               
           </tr>
@@ -52,7 +55,7 @@ console.log(bills)
         < div class=" col-5">
             {/* <button className="w-100 h-100 btn btn-warning"><Link to="/API">Click Me</Link></button> */}
             <Link className="badge badge-warning w-100 h-90
-             text-center  " to="/API"><h3>Web Services</h3></Link>
+            text-center  " to="/API"><h3>Web Services</h3></Link>
             
             </div>
     </div>

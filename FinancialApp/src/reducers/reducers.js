@@ -10,7 +10,8 @@ const initialState ={
         billName :"gas",
         cost: 0,
         newId: 1,
-        notes:"notes"
+        notes:"notes",
+        date: new Date()
         }
             ]
 };
