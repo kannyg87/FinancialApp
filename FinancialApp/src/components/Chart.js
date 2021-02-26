@@ -18,30 +18,31 @@ class Chart extends Component {
       return obj.billName
       })
       console.log(MappingLable)
+      // const filteredMappingLabels = MappingLable.filter(obj => { obj != undefined})
 
-
+    
     this.state ={
-                  chartData:{
-                    labels:[ 'gas','water', 'health', 'internet', 'dental', 'gym'],
+                  // chartData:{
+                  //   labels:[ 'gas','water', 'health', 'internet', 'dental', 'gym'],
 
-                    // chartData:[ {
-                    //   lable:'$',
-                    //   labels:[ MappingLable[0], MappingLable[1], MappingLable[2], MappingLable[3], MappingLable[4], MappingLable[6]],
-        
+                    chartData:{
+                    
+                      //labels:[ MappingLable[0], MappingLable[1], MappingLable[2], MappingLable[3], MappingLable[4], MappingLable[6]],
+                      labels:MappingLable,
                     datasets:[ {
                                 lable:'$',
                                 data:[ mapping[0], mapping[1], mapping[2], mapping[3], mapping[4], mapping[6]],
                     backgroundColor:[
-                            'rgba(255,99,132.0.6)',
-                            'red',
-                            'blue',
-                            'green',
-                            'bg-gradient-warning',
+                            'forestgreen',
+                            'darkorange',
+                            'indianred',
+                            'lightcoral',
+                            '	lightskyblue',
                             'bg-gradient-info',
 
                                     ]//end of bg color
-                                  
-          }
+                                  }                       
+                                
         ]
 
       }
