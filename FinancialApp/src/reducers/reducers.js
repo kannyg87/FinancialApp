@@ -8,7 +8,7 @@ const initialState ={
         {
         id: uuidv1(),
         billName :"gas",
-        cost: 0,
+        cost: 15,
         newId: 1,
         notes:"notes",
         date: new Date()

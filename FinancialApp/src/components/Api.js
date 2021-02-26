@@ -40,7 +40,7 @@ const {items}= this.state
                         </div>
                 </div>
             
-           
+        
         })
         return (
         <>
