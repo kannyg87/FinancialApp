@@ -6,7 +6,7 @@ const App = () => {
   const dateToFormat = new Date();
   return (
     <>
-      Home Page <br />
+      <br />
     
             <Moment date={dateToFormat} />
     </>

@@ -5,13 +5,10 @@ import {v1 as uuidv1} from 'uuid';
 import {addPayment} from '../actions/templeteAction'
 import Financial from '../assets/imgs/financial.jpg';
 
-
-
 const AddPaymnet = () => {
     const [id,setId]=useState(1);
     const dispatch =useDispatch();
     
-
     const handleEvent =(e) =>{
         e.preventDefault();
         setId(id+1);
@@ -31,7 +28,6 @@ const AddPaymnet = () => {
         e.target.cost.value = "";
         e.target.notes.value= "";
         e.target.time.value= "";
-
     }
 
     return (
@@ -40,6 +36,7 @@ const AddPaymnet = () => {
     <div class="row mt-5">
         <div class=" col-5">
                 <form onSubmit={handleEvent}>
+
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Billing Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Billing Name ..." />

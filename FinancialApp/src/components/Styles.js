@@ -41,3 +41,35 @@ margin-left: 0 !important;
 
 
 `;
+
+export const ChartDiv = styled.div`
+  height:70%;
+  width:70%;
+  
+  margin:auto;
+  background:#f5f5dc ;
+
+`;
+
+export const ChartDivImg = styled.div`
+  height:70%;
+  width:70%;
+  
+  margin:auto;
+  background:#f5f5dc ;
+
+`;
+
+export const Img = styled.img`
+  padding: 60px;
+  width: 100%;
+  height:auto;
+  padding: 5px;
+  background:#f5f5dc ;
+  margin-left: auto;
+  text-align: center;
+  
+  
+  
+  
+`;

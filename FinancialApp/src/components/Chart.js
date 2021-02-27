@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
 import { Bar, Line, Pie } from 'react-chartjs-2';
 import { connect } from "react-redux";
-// import { Body, Container} from './Styles';
-
-
+import { ChartDiv} from './Styles';
 
 class Chart extends Component {
   constructor(props){
@@ -11,24 +9,16 @@ class Chart extends Component {
 
     const mapping = this.props.payments.map(obj =>{
       return obj.cost
-    
-
       })
+
     const MappingLable  = this.props.payments.map(obj =>{
       return obj.billName
       })
       console.log(MappingLable)
-      // const filteredMappingLabels = MappingLable.filter(obj => { obj != undefined})
 
-    
     this.state ={
-                  // chartData:{
-                  //   labels:[ 'gas','water', 'health', 'internet', 'dental', 'gym'],
-
                     chartData:{
-                    
-                      //labels:[ MappingLable[0], MappingLable[1], MappingLable[2], MappingLable[3], MappingLable[4], MappingLable[6]],
-                      labels:MappingLable,
+                    labels:MappingLable,
                     datasets:[ {
                                 lable:'$',
                                 data:[ mapping[0], mapping[1], mapping[2], mapping[3], mapping[4], mapping[6]],
@@ -39,12 +29,9 @@ class Chart extends Component {
                             'lightcoral',
                             '	lightskyblue',
                             'bg-gradient-info',
-
                                     ]//end of bg color
-                                  }                       
-                                
+                                  }                                                      
         ]
-
       }
     }
   }
@@ -58,12 +45,10 @@ class Chart extends Component {
   render() {
     return (
       <>
-      {/* <Body>
-        <Container> */}
+        <ChartDiv>
           <div className="chart">
             <Bar
-                data={this.state.chartData}
-            
+                data={this.state.chartData}            
                 options={{ 
                   title:{
                     display:this.props.displayTitle,
@@ -77,8 +62,7 @@ class Chart extends Component {
                   }}
               />
           </div>
-        {/* </Container>
-      </Body> */}
+          </ChartDiv>
       </>
     )
   }

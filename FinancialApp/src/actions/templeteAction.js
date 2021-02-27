@@ -17,6 +17,14 @@ export const deletePayment = (payment) => {
     }
 }
 
+export const updateRecord = (record)=>{
+    
+    return{
+        type:"UPDATE_BILLNAME",
+        data:record
+    }
+}
+
 
 
 

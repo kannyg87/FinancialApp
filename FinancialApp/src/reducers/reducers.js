@@ -2,16 +2,15 @@ import {v1 as uuidv1} from "uuid"
 
 
 const initialState ={
-    totalCost:0,
-    
+    totalCost:0,    
     payments:[
         {
         id: uuidv1(),
         billName :"gas",
-        cost: 15,
+        cost: 0,
         newId: 1,
         notes:"notes",
-        date: new Date()
+        date: new Date(),
         }
             ]
 };
@@ -32,6 +31,7 @@ const reducers = (state = initialState, action) => {
                     totalCost: state.totalCost - parseFloat(action.data.cost),
                     payments: filterPayment
                 } 
+        
         default:
             return state;
     }
