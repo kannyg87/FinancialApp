@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
+import App from './App';
 import Payment from './components/Payment';
 import MyChart from './components/Chart'
 import Kanny from './components/AboutMe'
@@ -55,7 +55,7 @@ ReactDOM.render(
         <Router>
           <BaseLayout>
             <Switch>
-              {/* <Route exact path='/' component={App}/> */}
+              <Route exact path='/' component={App}/>
               <Route exact path='/Payment' component={Payment}/>
               <Route path='/API' component={API}/>
               <Route path='/mychart' component={MyChart}/> 

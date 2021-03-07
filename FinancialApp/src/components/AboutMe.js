@@ -22,11 +22,15 @@ const AboutMe = () => {
             </div>
             <div className=" col-6">
                 <h2>Kanny Mohamad</h2>
+                
                 <p className="title">Full-stack Developer</p>
-                <a  href={"https://github.com/kannyg87"} target="_blank">Github </a>&nbsp;    
-                <a  href={"https://www.linkedin.com/in/kannymohamad/"} target="_blank">LinkedIn</a>
                 <p>kanny.ghafour87@gmail.com</p>
-                <Link className= "badge badge-warning w-50 h-90 text-center" target="_blank" to="http://kanny.us/"> <h3>Portfolio</h3></Link>
+                <a  href={"https://github.com/kannyg87"} target="_blank">Github </a>&nbsp;  <br />
+                
+                <a  href={"https://www.linkedin.com/in/kannymohamad/"} target="_blank">LinkedIn</a>
+
+                <a href={"http://kanny.us"} target="_blank"><h3>Portfolio</h3></a>
+                
                 
             </div>
         </div>
